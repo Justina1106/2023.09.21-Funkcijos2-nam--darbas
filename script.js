@@ -1,3 +1,5 @@
+
+console.groupCollapsed('8-ta funkcija')
 // 8. Funkciją, kuri konvertuoja dienas į pasirinktą formatą (minutes, valandas, savaites, mėnesius arba metus):
 // 8.1. Funkcija priima du parametrus:
 //   8.1.1. Dienų skaičių.
@@ -29,8 +31,7 @@
     if (format === 'years') {
         let years = (days / 365).toFixed(2)
       return `${days} days - ${years} years.`
-    }
-  
+    } 
   }
   
   console.log(getDays(5, 'minutes'))
@@ -38,7 +39,9 @@
   console.log(getDays(5, 'weeks'))
   console.log(getDays(5, 'months'))
   console.log(getDays(5, 'years'))
+  console.groupEnd()
 
+  console.groupCollapsed('9-ta funkcija')  
 
 // 9. Funkciją, kuri patikrina ar skaičius dalinasi iš kito skaičiaus:
 // 9.1. Funkcija priima du parametrus:
@@ -48,6 +51,18 @@
 //   9.2.1. Jeigu dalinasi: 10 dalinasi iš 5.
 //   9.2.2. Skaičius 11 nesidalina iš 5. Liekana yra 1.
 
+function convertNumber(dalinys, daliklis) {
+    if (dalinys % daliklis === 0) {
+      return `Skaičius ${dalinys} dalinasi iš ${daliklis}.`
+    }
+    if (dalinys % daliklis !== 0) {
+        return `Skaičius ${dalinys} nesidalina iš ${daliklis}. Liekana yra 1.`
+    }
+}
+console.log(convertNumber(10, 5)) 
+console.log(convertNumber(11, 5))    
+
+console.groupEnd()
 
 
 // 10. Funkciją, kuri patikrina ar įvestas tekstas turi porini raidžių skaičių ar neporinį.
