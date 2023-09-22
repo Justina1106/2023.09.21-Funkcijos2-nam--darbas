@@ -41,7 +41,7 @@ console.groupCollapsed('8-ta funkcija')
   console.log(getDays(5, 'years'))
   console.groupEnd()
 
-  console.groupCollapsed('9-ta funkcija')  
+console.groupCollapsed('9-ta funkcija')  
 
 // 9. Funkciją, kuri patikrina ar skaičius dalinasi iš kito skaičiaus:
 // 9.1. Funkcija priima du parametrus:
@@ -64,10 +64,23 @@ console.log(convertNumber(11, 5))
 
 console.groupEnd()
 
+console.groupCollapsed('10-ta funkcija')
 
 // 10. Funkciją, kuri patikrina ar įvestas tekstas turi porini raidžių skaičių ar neporinį.
 
+function getSentense(vasara, pavasaris) {
+    let str = `pavasaris`
+    if (str.length % 2 === 0) {
+        return `žodis turi porinį raidžių skaičių`
+    }
+    if (str.length % 2 !== 0) {
+        return `žodis turi neporinį raidžių skaičių`
+    }
+}
+console.log(getSentense('vasara'))
+console.log(getSentense('pavasaris'))
 
+console.groupEnd()
 
 // 11. Funkciją, kuri paima nurodytą simbolį iš žodžio ar sakinio.
 //   11.1. Funkcija priima du parametrus: tekstą ir kelintą simbolį reikia grąžinti.
