@@ -69,7 +69,7 @@ console.groupCollapsed('10-ta funkcija')
 // 10. Funkciją, kuri patikrina ar įvestas tekstas turi porini raidžių skaičių ar neporinį.
 
 function getSentense(vasara) {
-    let str = `pavasaris`
+    let str = `vasara`
     if (str.length % 2 === 0) {
         return `žodis turi porinį raidžių skaičių`
     }
@@ -82,6 +82,8 @@ console.log(getSentense('vasara'))
 
 console.groupEnd()
 
+console.groupCollapsed('11-ta funkcija')
+
 // 11. Funkciją, kuri paima nurodytą simbolį iš žodžio ar sakinio.
 //   11.1. Funkcija priima du parametrus: tekstą ir kelintą simbolį reikia grąžinti.
 //   11.2. Funkcija grąžina atsakymą tokiu formatu: Teksto "Labas" 3 raidė yra "b".
@@ -89,3 +91,21 @@ console.groupEnd()
 //   11.3. Jeigu nurodytas skaičius yra didesnis nei tekstas turi simbolių, tai reikia grąžinti error'ą tokiu formatu: Tekstas "Labas" turi 5 simbolius, o jūs nurodėte grąžinti 8.
 
 //   11.4. Patobulinti funkciją, kad būtų galima įrašyti neigiamą skaičių, jeigu norima gauti teksto simbolį skaičiuojant nuo jo galo, o ne nuo priekio.
+
+function getSymbol(text, position) {
+    let str = 'Labas'
+    str.length
+    let strNum = 8
+    if (str[4]) {
+        return `Teksto ${text} ${position} raidė yra "b".`
+    }
+    if (text < 8) {
+    return `${text} turi 5 simbolius, o jūs nurodėte grąžinti ${position}.`
+}
+  }
+  
+  console.log(getSymbol('Labas', 5))
+  console.log(getSymbol('Labas', 8))
+
+
+console.groupEnd()
