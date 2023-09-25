@@ -68,7 +68,7 @@ console.groupCollapsed('10-ta funkcija')
 
 // 10. Funkciją, kuri patikrina ar įvestas tekstas turi porini raidžių skaičių ar neporinį.
 
-function getSentense(vasara, pavasaris) {
+function getSentense(vasara) {
     let str = `pavasaris`
     if (str.length % 2 === 0) {
         return `žodis turi porinį raidžių skaičių`
@@ -78,7 +78,7 @@ function getSentense(vasara, pavasaris) {
     }
 }
 console.log(getSentense('vasara'))
-console.log(getSentense('pavasaris'))
+
 
 console.groupEnd()
 
